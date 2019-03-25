@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75843B83-CBBE-4968-8DC6-6AC523695DEB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Cloud_Vision_Test_Batch</RootNamespace>
+    <AssemblyName>Cloud Vision Test Batch</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.Api.CommonProtos, Version=1.3.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Api.CommonProtos.1.3.0\lib\net45\Google.Api.CommonProtos.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Api.Gax, Version=2.5.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Api.Gax.2.5.0\lib\net45\Google.Api.Gax.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Api.Gax.Grpc, Version=2.5.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Api.Gax.Grpc.2.5.0\lib\net45\Google.Api.Gax.Grpc.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.38.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.38.0\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.38.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.38.0\lib\net45\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.38.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.38.0\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.38.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.38.0\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.38.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.38.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Vision.v1, Version=1.38.0.1533, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Vision.v1.1.38.0.1533\lib\net45\Google.Apis.Vision.v1.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Cloud.Vision.V1, Version=1.3.0.0, Culture=neutral, PublicKeyToken=185c282632e132a0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Cloud.Vision.V1.1.3.0\lib\net45\Google.Cloud.Vision.V1.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.LongRunning, Version=1.0.0.0, Culture=neutral, PublicKeyToken=185c282632e132a0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.LongRunning.1.0.0\lib\net45\Google.LongRunning.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.5.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.5.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Grpc.Auth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d754f35622e28bad, processorArchitecture=MSIL">
+      <HintPath>..\packages\Grpc.Auth.1.13.1\lib\net45\Grpc.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Grpc.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d754f35622e28bad, processorArchitecture=MSIL">
+      <HintPath>..\packages\Grpc.Core.1.18.0\lib\net45\Grpc.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Primitives.4.0.1\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.0.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Interactive.Async, Version=3.0.3000.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Interactive.Async.3.1.1\lib\net46\System.Interactive.Async.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.0.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.1.1\lib\net46\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.2.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.0.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.0.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.1.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VisionSettings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Imagenes\PDFS\CARTA DE VENDOR AVILES QUINTANILLA.pdf" />
+    <None Include="packages.config" />
+    <None Include="TestOCR-7d6c151ad812.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagenes\Bch\CARTA DE VENDOR AVILES QUINTANILLA\CARTA DE VENDOR AVILES QUINTANILLA-1.jpg" />
+    <Content Include="Imagenes\Bch\CARTA DE VENDOR AVILES QUINTANILLA\CARTA DE VENDOR AVILES QUINTANILLA-2.jpg" />
+    <Content Include="Imagenes\Bch\CHECK AVILES QUINTANILLA\CHECK AVILES QUINTANILLA-1.jpg" />
+    <Content Include="Imagenes\Bch\CHECK AVILES QUINTANILLA\CHECK AVILES QUINTANILLA-2.jpg" />
+    <Content Include="Imagenes\Bch\CHECK AVILES QUINTANILLA\CHECK AVILES QUINTANILLA-3.jpg" />
+    <Content Include="Imagenes\Bch\CHECK AVILES QUINTANILLA\CHECK AVILES QUINTANILLA-4.jpg" />
+    <Content Include="Imagenes\Bch\CHECK AVILES QUINTANILLA\CHECK AVILES QUINTANILLA-5.jpg" />
+    <Content Include="Imagenes\Bch\CHECK AVILES QUINTANILLA\CHECK AVILES QUINTANILLA-6.jpg" />
+    <Content Include="Imagenes\Bch\CHECK AVILES QUINTANILLA\CHECK AVILES QUINTANILLA-7.jpg" />
+    <Content Include="Imagenes\Bch\CHECK AVILES QUINTANILLA\CHECK AVILES QUINTANILLA-8.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 1\ESCRITURA AVILES QUINTANILLA-01.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 1\ESCRITURA AVILES QUINTANILLA-02.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 1\ESCRITURA AVILES QUINTANILLA-03.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 1\ESCRITURA AVILES QUINTANILLA-04.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 1\ESCRITURA AVILES QUINTANILLA-05.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 1\ESCRITURA AVILES QUINTANILLA-06.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 1\ESCRITURA AVILES QUINTANILLA-07.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 1\ESCRITURA AVILES QUINTANILLA-08.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 1\ESCRITURA AVILES QUINTANILLA-09.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 1\ESCRITURA AVILES QUINTANILLA-10.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 1\ESCRITURA AVILES QUINTANILLA-11.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 1\ESCRITURA AVILES QUINTANILLA-12.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 2\ESCRITURA AVILES QUINTANILLA-13.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 2\ESCRITURA AVILES QUINTANILLA-14.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 2\ESCRITURA AVILES QUINTANILLA-15.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 2\ESCRITURA AVILES QUINTANILLA-16.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 2\ESCRITURA AVILES QUINTANILLA-17.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 2\ESCRITURA AVILES QUINTANILLA-18.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 2\ESCRITURA AVILES QUINTANILLA-19.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 2\ESCRITURA AVILES QUINTANILLA-20.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 2\ESCRITURA AVILES QUINTANILLA-21.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 2\ESCRITURA AVILES QUINTANILLA-22.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 2\ESCRITURA AVILES QUINTANILLA-23.jpg" />
+    <Content Include="Imagenes\Bch\ESCRITURA AVILES QUINTANILLA\PART 2\ESCRITURA AVILES QUINTANILLA-24.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 1\SET FISIOC AVILES QUINTANILLA-01.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 1\SET FISIOC AVILES QUINTANILLA-02.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 1\SET FISIOC AVILES QUINTANILLA-03.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 1\SET FISIOC AVILES QUINTANILLA-04.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 1\SET FISIOC AVILES QUINTANILLA-05.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 1\SET FISIOC AVILES QUINTANILLA-06.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 1\SET FISIOC AVILES QUINTANILLA-07.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 1\SET FISIOC AVILES QUINTANILLA-08.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 1\SET FISIOC AVILES QUINTANILLA-09.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 1\SET FISIOC AVILES QUINTANILLA-10.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 1\SET FISIOC AVILES QUINTANILLA-11.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 2\SET FISIOC AVILES QUINTANILLA-12.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 2\SET FISIOC AVILES QUINTANILLA-13.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 2\SET FISIOC AVILES QUINTANILLA-14.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 2\SET FISIOC AVILES QUINTANILLA-15.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 2\SET FISIOC AVILES QUINTANILLA-16.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 2\SET FISIOC AVILES QUINTANILLA-17.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 2\SET FISIOC AVILES QUINTANILLA-18.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 2\SET FISIOC AVILES QUINTANILLA-19.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 2\SET FISIOC AVILES QUINTANILLA-20.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 2\SET FISIOC AVILES QUINTANILLA-21.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 2\SET FISIOC AVILES QUINTANILLA-22.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 2\SET FISIOC AVILES QUINTANILLA-23.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 3\SET FISIOC AVILES QUINTANILLA-24.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 3\SET FISIOC AVILES QUINTANILLA-25.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 3\SET FISIOC AVILES QUINTANILLA-26.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 3\SET FISIOC AVILES QUINTANILLA-27.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 3\SET FISIOC AVILES QUINTANILLA-28.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 3\SET FISIOC AVILES QUINTANILLA-29.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 3\SET FISIOC AVILES QUINTANILLA-30.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 3\SET FISIOC AVILES QUINTANILLA-31.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 3\SET FISIOC AVILES QUINTANILLA-32.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 3\SET FISIOC AVILES QUINTANILLA-33.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\PART 3\SET FISIOC AVILES QUINTANILLA-34.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-01.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-02.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-03.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-04.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-05.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-06.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-07.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-08.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-09.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-10.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-11.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-12.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-13.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-14.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-15.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-16.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-17.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-18.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-19.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-20.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-21.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-22.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-23.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-24.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-25.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-26.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-27.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-28.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-29.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-30.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-31.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-32.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-33.jpg" />
+    <Content Include="Imagenes\Bch\SET FISIOC AVILES QUINTANILLA\SET FISIOC AVILES QUINTANILLA-34.jpg" />
+    <Content Include="Imagenes\Bch\TASACION AVILES QUINTANILLA\PART 1\TASACION AVILES QUINTANILLA-01.jpg" />
+    <Content Include="Imagenes\Bch\TASACION AVILES QUINTANILLA\PART 1\TASACION AVILES QUINTANILLA-02.jpg" />
+    <Content Include="Imagenes\Bch\TASACION AVILES QUINTANILLA\PART 1\TASACION AVILES QUINTANILLA-03.jpg" />
+    <Content Include="Imagenes\Bch\TASACION AVILES QUINTANILLA\PART 1\TASACION AVILES QUINTANILLA-04.jpg" />
+    <Content Include="Imagenes\Bch\TASACION AVILES QUINTANILLA\PART 1\TASACION AVILES QUINTANILLA-05.jpg" />
+    <Content Include="Imagenes\Bch\TASACION AVILES QUINTANILLA\PART 1\TASACION AVILES QUINTANILLA-06.jpg" />
+    <Content Include="Imagenes\Bch\TASACION AVILES QUINTANILLA\PART 1\TASACION AVILES QUINTANILLA-07.jpg" />
+    <Content Include="Imagenes\Bch\TASACION AVILES QUINTANILLA\PART 1\TASACION AVILES QUINTANILLA-08.jpg" />
+    <Content Include="Imagenes\Bch\TASACION AVILES QUINTANILLA\PART 1\TASACION AVILES QUINTANILLA-09.jpg" />
+    <Content Include="Imagenes\Bch\TASACION AVILES QUINTANILLA\PART 1\TASACION AVILES QUINTANILLA-10.jpg" />
+    <Content Include="Imagenes\Bch\TASACION AVILES QUINTANILLA\PART 2\TASACION AVILES QUINTANILLA-11.jpg" />
+    <Content Include="Imagenes\Bch\TASACION AVILES QUINTANILLA\PART 2\TASACION AVILES QUINTANILLA-12.jpg" />
+    <Content Include="Imagenes\Bch\TASACION AVILES QUINTANILLA\PART 2\TASACION AVILES QUINTANILLA-13.jpg" />
+    <Content Include="Imagenes\Bch\TASACION AVILES QUINTANILLA\PART 2\TASACION AVILES QUINTANILLA-14.jpg" />
+    <Content Include="Imagenes\Bch\TASACION AVILES QUINTANILLA\PART 2\TASACION AVILES QUINTANILLA-15.jpg" />
+    <Content Include="Imagenes\Bch\TASACION AVILES QUINTANILLA\PART 2\TASACION AVILES QUINTANILLA-16.jpg" />
+    <Content Include="Imagenes\Bch\TASACION AVILES QUINTANILLA\PART 2\TASACION AVILES QUINTANILLA-17.jpg" />
+    <Content Include="Imagenes\Bch\TASACION AVILES QUINTANILLA\PART 2\TASACION AVILES QUINTANILLA-18.jpg" />
+    <Content Include="Imagenes\Bci\Informe de Tasación Propiedad Urbana\Informe de Tasación Propiedad Urbana-1.jpg" />
+    <Content Include="Imagenes\Bci\Informe de Tasación Propiedad Urbana\Informe de Tasación Propiedad Urbana-2.jpg" />
+    <Content Include="Imagenes\Bci\Informe de Tasación Propiedad Urbana\Informe de Tasación Propiedad Urbana-3.jpg" />
+    <Content Include="Imagenes\Bci\Solicitud de Crédito Banca Persona Natural\Solicitud de Crédito Banca Persona Natural -1.jpg" />
+    <Content Include="Imagenes\Bci\Solicitud de Crédito Banca Persona Natural\Solicitud de Crédito Banca Persona Natural -2.jpg" />
+    <Content Include="Imagenes\Bci\Solicitud de Crédito Banca Persona Natural\Solicitud de Crédito Banca Persona Natural -3.jpg" />
+    <Content Include="Imagenes\Estado\Planilla de Tasación\Planilla de Tasación-1.jpg" />
+    <Content Include="Imagenes\Estado\Planilla de Tasación\Planilla de Tasación-2.jpg" />
+    <Content Include="Imagenes\Estado\Planilla de Tasación\Planilla de Tasación-3.jpg" />
+    <Content Include="Imagenes\Estado\Solicitud de Credito\Solicitud de Credito-1.jpg" />
+    <Content Include="Imagenes\Estado\Solicitud de Credito\Solicitud de Credito-2.jpg" />
+    <Content Include="Imagenes\Estado\Solicitud de Credito\Solicitud de Credito-3.jpg" />
+    <Content Include="Imagenes\Estado\Solicitud de Credito\Solicitud de Credito-4.jpg" />
+    <Content Include="Imagenes\Estado\Solicitud de Credito\Solicitud de Credito-5.jpg" />
+    <Content Include="Imagenes\Estado\Solicitud de Credito\Solicitud de Credito-6.jpg" />
+    <Content Include="Imagenes\Estado\Solicitud de Credito\Solicitud de Credito-7.jpg" />
+    <Content Include="Imagenes\Estado\Solicitud de Credito\Solicitud de Credito-8.jpg" />
+    <Content Include="Imagenes\Itau\Email Ejemplo Tarifario diario ITAU\Email Ejemplo Tarifario diario ITAU-1.jpg" />
+    <Content Include="Imagenes\Itau\Email Ejemplo Tarifario diario ITAU\Email Ejemplo Tarifario diario ITAU-2.jpg" />
+    <Content Include="Imagenes\Itau\Email Ejemplo Tarifario diario ITAU\Email Ejemplo Tarifario diario ITAU-3.jpg" />
+    <Content Include="Imagenes\Itau\Email Ejemplo Tarifario diario ITAU\Email Ejemplo Tarifario diario ITAU-4.jpg" />
+    <Content Include="Imagenes\Itau\Email Ejemplo Tarifario diario ITAU\Email Ejemplo Tarifario diario ITAU-5.jpg" />
+    <Content Include="Imagenes\Itau\Solicitud de credito\Solicitud de credito-1.jpg" />
+    <Content Include="Imagenes\Itau\Solicitud de credito\Solicitud de credito-2.jpg" />
+    <Content Include="Imagenes\Itau\Solicitud de credito\Solicitud de credito-3.jpg" />
+    <Content Include="Imagenes\Itau\Solicitud de credito\Solicitud de credito-4.jpg" />
+    <Content Include="Imagenes\Itau\Tasacion\Tasacion-1.jpg" />
+    <Content Include="Imagenes\Itau\Tasacion\Tasacion-2.jpg" />
+    <Content Include="Imagenes\Itau\Tasacion\Tasacion-3.jpg" />
+    <Content Include="Imagenes\Itau\Tasacion\Tasacion-4.jpg" />
+    <Content Include="Imagenes\Itau\Tasacion\Tasacion-5.jpg" />
+    <Content Include="Imagenes\Itau\Tasacion\Tasacion-6.jpg" />
+    <Content Include="Imagenes\Itau\Tasacion\Tasacion-7.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Grpc.Core.1.18.0\build\net45\Grpc.Core.targets" Condition="Exists('..\packages\Grpc.Core.1.18.0\build\net45\Grpc.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Grpc.Core.1.18.0\build\net45\Grpc.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Grpc.Core.1.18.0\build\net45\Grpc.Core.targets'))" />
+  </Target>
+</Project>

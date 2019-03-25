@@ -1,0 +1,62 @@
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\grpc_csharp_ext.x86.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\grpc_csharp_ext.x64.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\libgrpc_csharp_ext.x86.so
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\libgrpc_csharp_ext.x64.so
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\libgrpc_csharp_ext.x86.dylib
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\libgrpc_csharp_ext.x64.dylib
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Cloud Vision Test Batch.exe.config
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Cloud Vision Test Batch.exe
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Cloud Vision Test Batch.pdb
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Api.CommonProtos.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Api.Gax.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Api.Gax.Grpc.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Apis.Auth.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Apis.Core.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Apis.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Apis.Vision.v1.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Cloud.Vision.V1.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.LongRunning.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Protobuf.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Grpc.Auth.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Grpc.Core.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Microsoft.Win32.Primitives.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Newtonsoft.Json.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\System.Interactive.Async.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\System.Net.Http.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Api.CommonProtos.pdb
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Api.CommonProtos.xml
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Api.Gax.pdb
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Api.Gax.xml
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Api.Gax.Grpc.pdb
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Api.Gax.Grpc.xml
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Apis.pdb
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Apis.xml
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Apis.Auth.xml
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Apis.Core.pdb
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Apis.Core.xml
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Apis.Vision.v1.pdb
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Apis.Vision.v1.xml
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Cloud.Vision.V1.pdb
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Cloud.Vision.V1.xml
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.LongRunning.pdb
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.LongRunning.xml
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Google.Protobuf.xml
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Grpc.Auth.pdb
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Grpc.Auth.xml
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Grpc.Core.pdb
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Grpc.Core.xml
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\Newtonsoft.Json.xml
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\bin\Debug\System.Interactive.Async.xml
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\obj\Debug\Cloud Vision Test Batch.csproj.CoreCompileInputs.cache
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\obj\Debug\Cloud Vision Test Batch.csproj.CopyComplete
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\obj\Debug\Cloud Vision Test Batch.exe
+C:\Users\nrivera\source\repos\Cloud Vision Test Batch\Cloud Vision Test Batch\obj\Debug\Cloud Vision Test Batch.pdb

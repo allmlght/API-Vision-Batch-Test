@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloud Vision Test Batch", "Cloud Vision Test Batch\Cloud Vision Test Batch.csproj", "{75843B83-CBBE-4968-8DC6-6AC523695DEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75843B83-CBBE-4968-8DC6-6AC523695DEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75843B83-CBBE-4968-8DC6-6AC523695DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75843B83-CBBE-4968-8DC6-6AC523695DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75843B83-CBBE-4968-8DC6-6AC523695DEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D13813A-F7DA-4326-B3DF-65F3CE2C5DB5}
+	EndGlobalSection
+EndGlobal
